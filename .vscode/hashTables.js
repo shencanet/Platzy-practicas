@@ -30,9 +30,18 @@ set(key){
                 return currentBucket[i][1];
             }
         }
-    }
+    }return undefined;
 
 }
+getAllKeys(){
+    let items = this.data
+      .filter(item => item != undefined)
+      .flat()
+      .map(item => item[0])
+    
+    return items;
+  }
+
 }
 
 const myHashTable = new HashTable(50);
