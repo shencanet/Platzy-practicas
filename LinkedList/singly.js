@@ -44,5 +44,8 @@ class MysinglyLinkedList {
     this.length = 1;
   }
 }
+append(value) {
+  const newNode = new Node(value);
+}
 
 let MysinglyLinkedList = new MysinglyLinkedList(1);
