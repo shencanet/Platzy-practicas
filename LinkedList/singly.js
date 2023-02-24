@@ -46,6 +46,11 @@ class MysinglyLinkedList {
 }
 append(value) {
   const newNode = new Node(value);
+  this.tail.next = newNode;
+  this.tail = newNode;
+  this.length++;
+  return this;
+  
 }
 
 let MysinglyLinkedList = new MysinglyLinkedList(1);
