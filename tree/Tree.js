@@ -1,6 +1,6 @@
 //          [10] // PADRE
 //    [4]         [20] //nodo
-// [2]  [8]    [17]  [170] //HIJOS
+// [2]  [8]    [17]  [170] //HIJOS IZQ DISMINUYE DERC AUMENTA
 
 class Node {
     constructor(value) {
@@ -42,15 +42,14 @@ class Node {
     }
     search(value) {
         let current = this.root;
-        while( current && current.value != value ) {
+        while( current && current.value != value ) {//RECORRE  ARBOL
           if( value < current.value) {
             current = current.left;
           } else {
             current = current.right;
           }
         }
-        return current;
-      }
+        return current;//ENCUANTRA EL VALOR
       
 
   }
