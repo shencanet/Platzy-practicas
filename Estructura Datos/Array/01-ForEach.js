@@ -13,6 +13,10 @@ const products = [
     { title: 'Pizza', price: 20 },
     { title: 'Soda', price: 5 },
   ]
+
+  console.log('Primer Producto',products[0].title, 'Precio ', products[0].price )
+  
+  
   //<div id="app"></div> html
   const app = document.getElementById('app')
   
