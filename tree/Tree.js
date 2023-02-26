@@ -40,6 +40,33 @@ class Node {
         }
       }
     }
+    search(value) {
+        let current = this.root;
+        while( current && current.value != value ) {
+          if( value < current.value) {
+            current = current.left;
+          } else {
+            current = current.right;
+          }
+        }
+        return current;
+      }
+      
+
   }
-  
+
+ 
   const tree = new BinarySearchTree();
+
+  tree.insert(10);//insertamos root valor 10
+ //console.log(tree);//verificamos todo correcto
+  tree.insert(20);//hijo derecho 
+  //console.log(tree);
+  tree.insert(4);//hijo izquierdo
+  //console.log(tree);
+  tree.insert(2);
+  tree.insert(8);
+  tree.insert(17);
+  tree.insert(170);
+  const shen =tree.search(170);
+  console.log(shen)
