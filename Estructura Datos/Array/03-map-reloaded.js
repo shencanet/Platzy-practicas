@@ -48,3 +48,15 @@ const rta3 = orders.map(item => {
 
 console.log('rta2', rta3)
 console.log('original', orders)
+
+export function addNewAttr(array) {
+
+  
+    return array.map(item => {
+      return {
+        ...item,
+        taxes: Math.trunc(0.19 * (item.price))
+      };
+    });
+  }; 
+
