@@ -11,6 +11,7 @@ for (let index = 0; index < numbers.length; index++) {
     }
 }
 console.log('for', rta);
+
 const rta2 = numbers.every(item => item <= 40)
 console.log('rta2', rta2);
 
@@ -33,3 +34,10 @@ const team = [
     age: 18,
   },
 ];
+
+
+/*Tu reto es retornar true si dentro de array de números todos son pares, para solucionarlo vas a encontrar una función llamada checkArray que recibe un parámetro de entrada:
+*/
+export function checkArray(array) {
+    return array.length == 0? false : array.every( item => item % 2 === 0 );
+  }
