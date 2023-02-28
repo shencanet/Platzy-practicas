@@ -1,6 +1,4 @@
-server
-
-Descargar todo
+//some si uno cumple true
 const numbers = [1, 2, 3, 4];
 
 let rta = false;
